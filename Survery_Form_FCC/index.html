@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">FreeCodeCamp Survey</h1>
+        <p id="description">Please help us improve our service by completing this Survey!</p>
+    </header>
+    <main>
+        <form action="/thankyou.html" id="survey-form" method="get">
+            <div>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Chris Bossman" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="cerealslayer68@gmail.com" required>
+            </div>
+            <div>
+                <label for="age" id="number-label">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Your age" min="12" max="99" required>
+            </div>
+            <div>
+                <label for="dropdown" id="select-label">Please let us know how did you hear about us:</label>
+                <select name="referrer-select" id="dropdown">
+                    <option value="">Choose an option</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="Blog">Blog post</option>
+                    <option value="friend">A Friend</option>
+                </select>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Which role would you like to learn or work as in the future:</legend>
+                    <div>
+                        <input type="radio" name="role" id="front-end" checked>
+                        <label for="front-end">Front-End</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="role" id="back-end">
+                        <label for="back-end">Back-End</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="role" id="fullstack">
+                        <label for="fullstack">Fullstack</label>
+                    </div>
+                </fieldset>
+            </div>
+            <input type="submit" name="submit" id="submit">
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
