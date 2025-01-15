@@ -1,0 +1,66 @@
+body {
+  background-color: #404197;
+  margin: auto auto;
+  color: rgb(201, 201, 198);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+#description {
+  text-align: center;
+}
+
+form {
+  width: 30%;
+  margin: auto auto;
+  line-height: 1.7;
+  background-color: rgba(27, 27, 50, 0.8);
+  border-radius: 0.25rem;
+  padding: 2.5rem;
+}
+
+div {
+  display: block;
+  margin: 15px auto;
+}
+
+input {
+  display: block;
+  width: 70%;
+  border-radius: 0.2rem;
+  background-color: rgb(236, 235, 235);
+}
+
+select,
+#submit {
+  display: block;
+  width: 35%;
+  background-color: rgb(236, 235, 235);
+}
+
+fieldset {
+  border: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+.radio,
+.checkbox {
+  display: inline;
+  width: 1vw;
+}
+
+legend,
+.checkbox,
+.radio {
+  margin: 0%;
+}
+
+textarea {
+  max-width: 75%;
+  background-color: rgb(236, 235, 235);
+}
+
+#submit {
+  margin: auto;
+}

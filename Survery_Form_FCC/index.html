@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1 id="title">FreeCodeCamp Survey</h1>
-        <p id="description">Please help us improve our service by completing this Survey!</p>
+        <p id="description"><em>Please help us improve our service by completing this Survey!</em></p>
     </header>
     <main>
         <form action="/thankyou.html" id="survey-form" method="get">
@@ -24,8 +24,8 @@
                 <input type="email" id="email" name="email" placeholder="cerealslayer68@gmail.com" required>
             </div>
             <div>
-                <label for="age" id="number-label">Age:</label>
-                <input type="number" id="age" name="age" placeholder="Your age" min="12" max="99" required>
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" name="age" placeholder="Age" min="12" max="99" required>
             </div>
             <div>
                 <label for="dropdown" id="select-label">Please let us know how did you hear about us:</label>
@@ -34,57 +34,59 @@
                     <option value="youtube">YouTube</option>
                     <option value="Blog">Blog post</option>
                     <option value="friend">A Friend</option>
+                    <option value="other">Other</option>
                 </select>
             </div>
             <div>
                 <fieldset>
                     <legend>Which role would you like to learn or work as in the future:</legend>
                     <div>
-                        <input type="radio" name="role" id="front-end" checked>
+                        <input type="radio" name="role" id="front-end" value="front-end" class="checkbox" checked>
                         <label for="front-end">Front-End</label>
                     </div>
                     <div>
-                        <input type="radio" name="role" id="back-end">
+                        <input type="radio" name="role" id="back-end" value="back-end" class="checkbox">
                         <label for="back-end">Back-End</label>
                     </div>
                     <div>
-                        <input type="radio" name="role" id="fullstack">
+                        <input type="radio" name="role" id="fullstack" value="fullstack" class="checkbox">
                         <label for="fullstack">Fullstack</label>
                     </div>
                 </fieldset>
             </div>
             <fieldset>
-                <legend>Check the languages you would like us to add to our curriculum:</legend>
+                <legend>Check the languages you would like to see added to our curriculum:</legend>
                 <div>
                     <div>
-                        <input type="checkbox" name="language" id="c" value="c">
+                        <input type="checkbox" name="language" id="c" value="c" class="radio">
                         <label for="c">C</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" name="language" id="c++" value="c++">
+                        <input type="checkbox" name="language" id="c++" value="c++" class="radio">
                         <label for="c++">C++</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" name="language" id="python" value="python">
+                        <input type="checkbox" name="language" id="python" value="python" class="radio">
                         <label for="python">Python</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" name="language" id="java" value="java">
+                        <input type="checkbox" name="language" id="java" value="java" class="radio">
                         <label for="java">Java</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" name="language" id="go" value="go">
+                        <input type="checkbox" name="language" id="go" value="go" class="radio">
                         <label for="go">Go</label>
                     </div>
                 </div>
             </fieldset>
             <div>
-                <label for="additional-comments">Please provide us any additional comment you may have:</label>
-                <textarea name="additional-comments" id="additional-comments"></textarea>
+                <label for="additional-comments">Any comments or suggestions?</label>
+                <textarea name="additional-comments" id="additional-comments" rows="6" cols="50"
+                    placeholder="Please provide us with any additional comment/s or suggestion/s you may have..."></textarea>
             </div>
             <input type="submit" name="submit" id="submit">
         </form>
