@@ -48,11 +48,10 @@ fieldset {
 .checkbox {
   display: inline;
   width: 1vw;
+  margin: 0% 1.5% 0% 0%;
 }
 
-legend,
-.checkbox,
-.radio {
+legend {
   margin: 0%;
 }
 
